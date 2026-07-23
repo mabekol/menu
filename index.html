@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mis sitios web</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 30px 18px;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .subtitulo {
+      text-align: center;
+      color: #cbd5e1;
+      margin-bottom: 32px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .tarjeta {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      min-height: 105px;
+      padding: 20px;
+      border: 1px solid #334155;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.07);
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.2s;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .icono {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      flex-shrink: 0;
+      border-radius: 15px;
+      background: #2563eb;
+      font-size: 28px;
+    }
+
+    .informacion h2 {
+      margin-bottom: 6px;
+      font-size: 20px;
+    }
+
+    .informacion p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 35px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    /* Vista para celular */
+    @media (max-width: 650px) {
+      body {
+        padding: 25px 14px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      .menu {
+        grid-template-columns: 1fr;
+      }
+
+      .tarjeta {
+        min-height: 95px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="contenedor">
+
+    <h1>Mis sitios web</h1>
+    <p class="subtitulo">Selecciona el sitio que deseas abrir</p>
+
+    <section class="menu">
+
+      <a
+        class="tarjeta"
+        href="https://mabekol.github.io/simbiotica/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icono">🐟</div>
+        <div class="informacion">
+          <h2>Simbiótica</h2>
+          <p>Piscicultura simbiótica</p>
+        </div>
+      </a>
+
+      <a
+        class="tarjeta"
+        href="https://mabekol.github.io/control-presupuesto/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icono">📊</div>
+        <div class="informacion">
+          <h2>Control de presupuesto</h2>
+          <p>Administración de ingresos y gastos</p>
+        </div>
+      </a>
+
+      <a
+        class="tarjeta"
+        href="https://mabekol.github.io/budget/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icono">💰</div>
+        <div class="informacion">
+          <h2>Budget</h2>
+          <p>Herramienta de presupuesto</p>
+        </div>
+      </a>
+
+      <a
+        class="tarjeta"
+        href="https://mabekol.github.io/budgetemp/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icono">🧾</div>
+        <div class="informacion">
+          <h2>Budgetemp</h2>
+          <p>Gestión de presupuesto empresarial</p>
+        </div>
+      </a>
+
+      <a
+        class="tarjeta"
+        href="https://mabekol.github.io/Cargas-CPF/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icono">⚖️</div>
+        <div class="informacion">
+          <h2>Cargas CPF</h2>
+          <p>Consulta y cálculo de cargas</p>
+        </div>
+      </a>
+
+      <a
+        class="tarjeta"
+        href="https://mabekol.github.io/cargas-cpf-new/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icono">🆕</div>
+        <div class="informacion">
+          <h2>Cargas CPF New</h2>
+          <p>Nueva versión del sitio</p>
+        </div>
+      </a>
+
+    </section>
+
+    <footer>
+      Menú personal de aplicaciones
+    </footer>
+
+  </main>
+
+</body>
+</html>
